@@ -1,5 +1,6 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
+
 const config: MenuEntry[] = [
   {
     label: 'Home',
@@ -43,25 +44,25 @@ const config: MenuEntry[] = [
     
   },
   {
-    label: ' PancakeSwap Trade  V1',
+    label: ' PancakeSwap Trade  V',
     icon: 'TradeIcon',
     items: [
       {
         label: 'Exchange',
         href:
-          'https://tapswapv1.netlify.app/#/swap',
+          'https://pancakev1.tapswap.finance/#/swap',
       },
       {
         label: 'Liquidity',
         href:
-          'https://tapswapv1.netlify.app/#/pool',
+          'https://pancakev1.tapswap.finance#/pool',
       },
     ],
   },
   {
     label: 'Lake Farms',
     icon: 'FarmIcon',
-    href: 'https://tapsdoge.netlify.app/#/farms',
+    href: `https://dapp.${process.env.REACT_APP_URL}/#/farms`,
   },
   {
     label: 'Oasis Pools',
