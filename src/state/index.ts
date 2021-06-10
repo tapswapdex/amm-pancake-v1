@@ -12,16 +12,8 @@ import burn from './burn/reducer'
 import multicall from './multicall/reducer'
 import { getThemeCache } from '../utils/theme'
 
-type MergedState = {
-  user: {
-    [key: string]: any
-  }
-  transactions: {
-    [key: string]: any
-  }
-}
 const PERSISTED_KEYS: string[] = ['user', 'transactions']
-const loadedState = load({ states: PERSISTED_KEYS }) as MergedState
+const loadedState = load({ states: PERSISTED_KEYS }) as any
 if (loadedState.user) {
   loadedState.user.userDarkMode = getThemeCache()
 }
