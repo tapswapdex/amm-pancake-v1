@@ -26,43 +26,59 @@ const config: MenuEntry[] = [
   //   ],
   // },
   {
-    label: 'ApeSwap Trade',
+    label: 'ApeSwap',
     icon: 'TradeIcon',
     items: [
       {
         label: 'Exchange',
         href:
-          'https://tapswape2.netlify.app/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+          'https://swape.tapswap.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
       {
         label: 'Liquidity',
         href:
-         'https://tapswape2.netlify.app/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+         'https://swape.tapswap.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
       
     ],
     
   },
   {
-    label: ' PancakeSwap Trade  V',
+    label: ' PancakeSwap   V1',
     icon: 'TradeIcon',
     items: [
       {
         label: 'Exchange',
         href:
-          'https://pancakev1.tapswap.finance/#/swap',
+          'https://tapswapv1.netlify/#/swap',
       },
       {
         label: 'Liquidity',
         href:
-          'https://pancakev1.tapswap.finance#/pool',
+          'https://tapswapv1.netlify.app/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+      },
+    ],
+  },
+  {
+    label: ' PancakeSwap V2   ',
+    icon: 'TradeIcon',
+    items: [
+      {
+        label: 'Exchange',
+        href:
+          'https://pancakeswapv2.tapswap.finance/#/swap/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+      },
+      {
+        label: 'Liquidity',
+        href:
+          'https://pancakeswapv2.tapwswap.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
     ],
   },
   {
     label: 'Lake Farms',
     icon: 'FarmIcon',
-    href: `https://dapp.${process.env.REACT_APP_URL}/#/farms`,
+    href: `https://dapp.tapswap.finance/#/farms`,
   },
   {
     label: 'Oasis Pools',
@@ -143,6 +159,7 @@ const config: MenuEntry[] = [
   {
     label: 'More',
     icon: 'MoreIcon',
+
     items: [
       // {
       //   label: 'Voting',
@@ -150,7 +167,7 @@ const config: MenuEntry[] = [
       // },
       {
         label: 'Github',
-        href: 'https://github.com/tapswapmoney/Tapswap/',
+        href: 'https://github.com/tapswapdex/amm-pancakeswap-v1',
         target: '_blank',
       },
       // {
@@ -170,7 +187,7 @@ const config: MenuEntry[] = [
       },
       {
         label: 'Telegram',
-        href: 'https://t.me/tapswapchat',
+        href: 'https://t.me/tapswapdex',
         target: '_blank',
       },
     ],
