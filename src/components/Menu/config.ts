@@ -5,7 +5,7 @@ const config: MenuEntry[] = [
   {
     label: 'Home',
     icon: 'HomeIcon',
-    href: 'https://tapsdoge.netlify.app/#/',
+    href: 'https://dapp.tapswap.finance/#/',
   },
   // {
   //   label: 'Trade (New with APE)',
@@ -50,12 +50,12 @@ const config: MenuEntry[] = [
       {
         label: 'Exchange',
         href:
-          'https://tapswapv1.netlify/#/swap',
+          'https://pancakeswapv1.tapswap.finance/#/swap',
       },
       {
         label: 'Liquidity',
         href:
-          'https://tapswapv1.netlify.app/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+          'https://pancakeswapv1.tapswap.finance /#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
     ],
   },
@@ -83,12 +83,12 @@ const config: MenuEntry[] = [
   {
     label: 'Oasis Pools',
     icon: 'PoolIcon',
-    href: 'https://tapsdoge.netlify.app/#/pools',
+    href: 'https://dapp.tapswap.finance/#/pools',
   },
   {
     label: 'Smart Faucet',
     icon: 'BushIcon',
-    href: 'https://tapsdoge.netlify.app/#/bush',
+    href: 'https://dapp.tapswap.finance/#/bush',
   },
   // {
   //   label: 'Techrate Audit',
