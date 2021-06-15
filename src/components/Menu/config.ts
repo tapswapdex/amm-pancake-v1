@@ -7,73 +7,26 @@ const config: MenuEntry[] = [
     icon: 'HomeIcon',
     href: 'https://dapp.tapswap.finance/#/',
   },
-  // {
-  //   label: 'Trade (New with APE)',
-  //   icon: 'TradeIcon',
-  //   items: [
-  //     {
-  //       label: 'Exchange',
-  //       href:
-  //         'https://swape.tapswap.money/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
-  //       target: '_blank',
-  //     },
-  //     {
-  //       label: 'Liquidity',
-  //       href:
-  //         'https://swape.tapswap.money/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
-  //       target: '_blank',
-  //     },
-  //   ],
-  // },
   {
-    label: 'ApeSwap',
+    label: 'Dex Routing',
     icon: 'TradeIcon',
     items: [
       {
-        label: 'Exchange',
+        label: 'ApeSwap',
         href:
-          'https://swape.tapswap.finance/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+        'https://swape.tapswap.money/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
       {
-        label: 'Liquidity',
+        label: ' PancakeSwap   V1',
         href:
-         'https://swape.tapswap.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
-      },
-      
-    ],
-    
-  },
-  {
-    label: ' PancakeSwap   V1',
-    icon: 'TradeIcon',
-    items: [
-      {
-        label: 'Exchange',
-        href:
-          'https://pancakeswapv1.tapswap.finance/#/swap',
+              'https://pancakeswapv1.tapswap.money/#/swap',
       },
       {
-        label: 'Liquidity',
+        label: ' PancakeSwap V2   ',
         href:
-          'https://pancakeswapv1.tapswap.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+              'https://pancakeswapv2.tapswap.money/#/swap/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
-    ],
-  },
-  {
-    label: ' PancakeSwap V2   ',
-    icon: 'TradeIcon',
-    items: [
-      {
-        label: 'Exchange',
-        href:
-          'https://pancakeswapv2.tapswap.finance/#/swap/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
-      },
-      {
-        label: 'Liquidity',
-        href:
-          'https://pancakeswapv2.tapwswap.finance/#/add/0xe9e7cea3dedca5984780bafc599bd69add087d56/0x56eab07247e3e6404ac90140F20bba61375d5C3C',
-      },
-    ],
+    ]
   },
   {
     label: 'Lake Farms',
