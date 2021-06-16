@@ -1,5 +1,19 @@
 import { MenuEntry } from '@pancakeswap-libs/uikit'
 
+const getDexEchangeName = () => {
+  if (window.location.hostname.includes('swape')) {
+    return '[apeswap]'
+  }
+
+  if (window.location.hostname.includes('v1')) {
+    return '[pcsV1]'
+  }
+
+  if (window.location.hostname.includes('v2')) {
+    return '[pcsV2]'
+  }
+  return ''
+}
 
 const config: MenuEntry[] = [
   {
@@ -8,25 +22,24 @@ const config: MenuEntry[] = [
     href: 'https://dapp.tapswap.finance/#/',
   },
   {
-    label: 'Dex Routing',
+    label: `Dex Routing ${getDexEchangeName()}`,
     icon: 'TradeIcon',
     items: [
       {
         label: 'ApeSwap',
         href:
-        'https://swape.tapswap.money/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+          'https://swape.tapswap.money/#/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
       {
         label: ' PancakeSwap   V1',
-        href:
-              'https://pancakeswapv1.tapswap.money/#/swap',
+        href: 'https://pancakeswapv1.tapswap.money/#/swap',
       },
       {
         label: ' PancakeSwap V2   ',
         href:
-              'https://pancakeswapv2.tapswap.money/#/swap/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
+          'https://pancakeswapv2.tapswap.money/#/swap/swap?inputCurrency=0xe9e7cea3dedca5984780bafc599bd69add087d56&outputCurrency=0x56eab07247e3e6404ac90140F20bba61375d5C3C',
       },
-    ]
+    ],
   },
   {
     label: 'Lake Farms',
@@ -115,24 +128,24 @@ const config: MenuEntry[] = [
       //   href: 'https://www.dapp.com/app/tapswap-exchange',
       //   target: '_blank',
       // },
-       {
-         label: 'Dappradar.com',
+      {
+        label: 'Dappradar.com',
         href: 'https://www.dapp.com/app/tapswap-exchange',
         target: '_blank',
-       },
+      },
       {
-         label: 'Bsc Projects',
-         href: 'https://bscproject.org/#/project/767',
-         target: '_blank',
-       },
-       {
-         label: 'CoinGecko',
-         href: 'https://www.coingecko.com/en/coins/tapswaptoken',
-       },
-       {
-         label: 'CoinMarketCap',
-         href: 'https://coinmarketcap.com/currencies/tapswaptoken/',
-       },
+        label: 'Bsc Projects',
+        href: 'https://bscproject.org/#/project/767',
+        target: '_blank',
+      },
+      {
+        label: 'CoinGecko',
+        href: 'https://www.coingecko.com/en/coins/tapswaptoken',
+      },
+      {
+        label: 'CoinMarketCap',
+        href: 'https://coinmarketcap.com/currencies/tapswaptoken/',
+      },
     ],
   },
   // {
