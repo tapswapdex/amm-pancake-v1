@@ -1,4 +1,4 @@
-import { MenuEntry } from '@pancakeswap-libs/uikit'
+import { MenuEntry } from 'tapswap-uikit'
 
 const getDexEchangeName = () => {
   if (window.location.hostname.includes('swape')) {

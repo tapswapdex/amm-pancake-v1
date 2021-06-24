@@ -1,7 +1,7 @@
 import { CurrencyAmount, JSBI, Token, Trade } from '@pancakeswap-libs/sdk'
 import React, { useCallback, useContext, useEffect, useMemo, useRef, useState } from 'react'
 import { ArrowDown } from 'react-feather'
-import { CardBody, ArrowDownIcon, Button, IconButton, Text, Alert, Flex, Link } from '@pancakeswap-libs/uikit'
+import { CardBody, ArrowDownIcon, Button, IconButton, Text, Alert, Flex, Link } from 'tapswap-uikit'
 import styled, { ThemeContext } from 'styled-components'
 import AddressInputPanel from 'components/AddressInputPanel'
 import Card, { GreyCard } from 'components/Card'
@@ -238,7 +238,7 @@ const Swap = () => {
         checkForSyrup(inputCurrency.symbol.toLowerCase(), 'Selling')
       }
 
-      showBushWarning.current = (inputCurrency.symbol === "TAPS")
+      showBushWarning.current = inputCurrency.symbol === 'TAPS'
     },
     [onCurrencySelection, setApprovalSubmitted, checkForSyrup, showBushWarning]
   )
@@ -272,16 +272,17 @@ const Swap = () => {
   `
 
   return (
-    <>      
+    <>
       <CardNav />
       {showBushWarning.current === true ? (
         <TextWarning>
-          Thinking about selling some $TAPS? <br/> Did you already visit the <ActionLink
-          href="https://dapp.tapswap.money/bush"
-          target="_blank"
-        >Smart Faucet</ActionLink>?
+          Thinking about selling some $TAPS? <br /> Did you already visit the{' '}
+          <ActionLink href="https://dapp.tapswap.money/bush" target="_blank">
+            Smart Faucet
+          </ActionLink>
+          ?
         </TextWarning>
-        ): null }
+      ) : null}
       <AppBody>
         <Wrapper id="swap-page">
           <ConfirmSwapModal

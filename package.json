@@ -9,7 +9,6 @@
     "@crowdin/crowdin-api-client": "^1.8.16",
     "@ethersproject/experimental": "^5.0.1",
     "@pancakeswap-libs/sdk": "1.0.1",
-    "@pancakeswap-libs/uikit": "tapswapV3/uikit",
     "@popperjs/core": "^2.4.4",
     "@reach/dialog": "^0.10.3",
     "@reach/portal": "^0.10.3",
@@ -64,6 +63,7 @@
     "rebass": "^4.0.7",
     "redux-localstorage-simple": "^2.3.1",
     "styled-components": "^5.2.1",
+    "tapswap-uikit": "^0.0.3",
     "typescript": "^4.1.3"
   },
   "devDependencies": {
