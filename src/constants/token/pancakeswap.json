@@ -648,6 +648,14 @@
       "address": "0xbf7c81fff98bbe61b40ed186e4afd6ddd01337fe",
       "chainId": 56,
       "decimals": 18
+    },
+    {
+      "name": "My Defi Pet",
+      "symbol": "DPET",
+      "address": "0xfb62ae373aca027177d1c18ee0862817f9080d08",
+      "chainId": 56,
+      "decimals": 18,
+      "logoURI": "https://cdn.discordapp.com/attachments/847731075640066048/864032578473164810/Dpet_160px.png"
     }
   ]
 }
